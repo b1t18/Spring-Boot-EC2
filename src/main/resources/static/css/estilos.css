@@ -1,0 +1,18 @@
+.arriba{
+	display: flex;
+	flex-direction: row-reverse;
+	font-family: Archia,sans-serif;
+}
+
+.letra{
+    color: antiquewhite;
+}
+
+.fondo{
+	background-color: #343A40;
+}
+
+.img-carrusel{
+	height: 897px;
+	width: 100%;
+}

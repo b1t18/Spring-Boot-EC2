@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" th:href=@{css/estilos.css}>
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-danger">
+	<!--<header class="arriba bg-danger" >
+		<img alt="" src="img/ClientIconSVG.svg" width="17px">
+        <a class="letra" href="https://www.google.com">Ingresar </a>
+    </header>-->
+
+    <nav th:replace="fijo :: arriba"></nav>
+    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/promo1.jpg" alt="Los Angeles" class="carrusel-img img-carrusel">
+          </div>
+          <div class="carousel-item">
+            <img src="img/promo.jfif" alt="Chicago" class="carrusel-img img-carrusel">
+          </div>
+          <div class="carousel-item">
+            <img src="img/promo.jpg" alt="New York" class="carrusel-img img-carrusel">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <br>
+    <div class="container">
+    	<div class="alert alert-danger" style="border-radius: 7px; width:100%; text-align: center;">
+        	<strong><h1>PRODUCTOS</h1></strong>
+        </div>
+    </div>
+    <div class="container">
+    	<div class="row" style="text-align: center">
+		  <div class="col-md-4 alert alert-danger">
+		  	<img src="img/otro.jpg" alt="" class="rounded2">
+		  	<h5>Amindus</h5>
+		  </div>
+          <div class="col-md-4 alert alert-danger">
+          	<img src="img/papel.png" alt="" class="rounded2">
+          	<h5>Papel</h5>
+          </div>
+          <div class="col-md-4 alert alert-danger">
+          	<img src="img/Buttery.webp" alt="" class="rounded2">
+          	<h5>Cookies</h5>
+          	</div>
+          </div>
+		</div>
+    </div>
+</body>
+</html>

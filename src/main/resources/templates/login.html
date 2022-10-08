@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="m-0 vh-100 row justify-content-center align-items-center">
+		<div class="col-auto p-5 text-center border ">
+			<img alt="" th:src="@{/img/userpe.png}" width="127px">
+			<form th:action="@{/login}" method="post">
+				<label>Correo</label><br>
+				<input type="text" name="usuario"><br>
+				<label>Contraseña</label><br>
+				<input type="password" name="pass"><br>
+				<label style="font-size: 13px" th:text="${estado == 0} ? 'User y/o contraseña incorrecta' : '  ' "></label><br>
+				<button class="btn btn-primary btn-block">Ingresar</button>
+			</form>
+			<a class="letra" th:href="@{/Registro}">Aun no se ha registrado?</a>
+		</div>
+	</div>
+</body>
+</html>
